@@ -204,6 +204,6 @@ Ces scénarios bien rédigés illustrent des cas d'utilisation clairs, précis e
 
 ## La suite
 
-[BDD et automatisation](cours/07_BDD_et_automatisation.md)
+[BDD et automatisation](../cours/07_BDD_et_automatisation.md)
 
 ![...](...) <!-- .element width="...%" -->

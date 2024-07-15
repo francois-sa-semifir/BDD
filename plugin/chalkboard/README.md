@@ -31,22 +31,26 @@ Copy the file `plugin.js` and the  `img` directory into the plugin folder of you
 ```
 
 The following stylesheet
+
 ```html
 <link rel="stylesheet" href="plugin/chalkboard/style.css">
 <link rel="stylesheet" href="plugin/customcontrols/style.css">
 ```
+
 has to be included to the `head` section of you HTML-file.
 
-
 In order to include buttons for opening and closing the notes canvas or the chalkboard you should make sure that `font-awesome` is available. The easiest way is to include
-```
+
+```html
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 ```
+
 to the ```head``` section of you HTML-file.
 
 ## Usage
 
 ### Mouse or touch
+
 - Click on the pen symbols at the bottom left to toggle the notes canvas or chalkboard
 - Click on the color picker at the left to change the color (the color picker is only visible if the notes canvas or chalkboard is active)
 - Click on the up/down arrows on the left to the switch among multiple chalkboardd (the up/down arrows are only available for the chlakboard)
@@ -56,6 +60,7 @@ to the ```head``` section of you HTML-file.
 - Touch and hold for half a second, then move to wipe away previous drawings
 
 ### Keyboard
+
 - Press the 'BACKSPACE' key to delete all chalkboard drawings
 - Press the 'DEL' key to clear the notes canvas or chalkboard
 - Press the 'c' key to toggle the notes canvas
@@ -75,7 +80,6 @@ The plugin supports multiplexing via the [`multiplex` plugin](https://github.com
 ## PDF-Export
 
 If the slideshow is opened in [print mode](https://revealjs.com/pdf-export/), the chalkboard drawings in the session storage (see `storage` option - print version must be opened in the same tab or window as the original slideshow) or provided in a file (see `src` option) are included in the PDF-file. Each drawing on the chalkboard is added after the slide that was shown when opening the chalkboard. Drawings on the notes canvas are not included in the PDF-file.
-
 
 ## Configuration
 
@@ -103,55 +107,54 @@ All of the configurations are optional and the default values shown below are us
 
 ```javascript
 Reveal.initialize({
-	// ...
-    chalkboard: {
-        boardmarkerWidth: 3,
-        chalkWidth: 7,
-        chalkEffect: 1.0,
-        storage: null,
-        src: null,
-        readOnly: undefined,
-        transition: 800,
-        theme: "chalkboard",
-        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
-        grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
-        eraser: { src: path + 'img/sponge.png', radius: 20},
-        boardmarkers : [
-                { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
-                { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
-                { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
-                { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
-                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
-                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
-                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
-        ],
-        chalks: [
-                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
-                { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
-                { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
-                { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
-                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
-                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
-                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
-        ]
-    },
-    customcontrols: {
-  		controls: [
-  			{ icon: '<i class="fa fa-pen-square"></i>',
-  			  title: 'Toggle chalkboard (B)',
-  			  action: 'RevealChalkboard.toggleChalkboard();'
-  			},
-  			{ icon: '<i class="fa fa-pen"></i>',
-  			  title: 'Toggle notes canvas (C)',
-  			  action: 'RevealChalkboard.toggleNotesCanvas();'
-  			}
-  		]
-    },
-    // ...
+  // ...
+  chalkboard: {
+      boardmarkerWidth: 3,
+      chalkWidth: 7,
+      chalkEffect: 1.0,
+      storage: null,
+      src: null,
+      readOnly: undefined,
+      transition: 800,
+      theme: "chalkboard",
+      background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+      grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+      eraser: { src: path + 'img/sponge.png', radius: 20},
+      boardmarkers : [
+              { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+              { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+              { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+              { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+              { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+              { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+              { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+      ],
+      chalks: [
+              { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+              { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+              { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+              { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+              { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+              { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+              { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+      ]
+  },
+  customcontrols: {
+    controls: [
+      { icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+      },
+      { icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+      }
+    ]
+  },
+  // ...
 
 });
 ```
-
 
 ## License
 

@@ -132,6 +132,6 @@ En résumé, les difficultés de spécification des besoins dans un projet de d�
 
 ## La suite
 
-[Principes Agiles](cours/02_Principes_agiles.md)
+[Principes Agiles](../cours/02_Principes_agiles.md)
 
 ![...](...) <!-- .element width="...%" -->

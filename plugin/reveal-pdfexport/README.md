@@ -14,11 +14,11 @@ Add the plugin to the initialization of your presentation, as below.
 <script src="plugin/pdfexport/pdfexport.js"></script>
 // .. 
 Reveal.initialize({
-	// ...
-	plugins: [
-		// ..
-		PdfExport,
-	]
+  // ...
+  plugins: [
+    // ..
+    PdfExport,
+  ]
 });
 ```
 
@@ -26,11 +26,11 @@ Reveal.initialize({
 
 ```javascript
 Reveal.initialize({
-	// ...
-	dependencies: [
-		// ...
-		{ src: 'plugin/pdfexport/pdfexport.js', async: true },
-	]
+  // ...
+  dependencies: [
+    // ...
+    { src: 'plugin/pdfexport/pdfexport.js', async: true },
+  ]
 });
 ```
 
@@ -39,11 +39,11 @@ For **reveal 3.x only** you need to remove all of the following or similar lines
 ```html
 <!-- Printing and PDF exports -->
 <script>
-	var link = document.createElement( 'link' );
-	link.rel = 'stylesheet';
-	link.type = 'text/css';
-	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-	document.getElementsByTagName( 'head' )[0].appendChild( link );
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
 </script>
 ```
 
@@ -57,10 +57,10 @@ You can configure some aspects of the plugin by adding the following options to 
 
 ```javascript
 Reveal.initialize({
-	// ...
+  // ...
 
-	// Shortcut for toggling between screen and PDF mode
-	pdfExportShortcut: 'E',
+  // Shortcut for toggling between screen and PDF mode
+  pdfExportShortcut: 'E',
 });
 ```
 

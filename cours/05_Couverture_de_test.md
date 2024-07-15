@@ -105,6 +105,6 @@ Les pratiques TDD, ATDD et BDD jouent un rôle crucial dans l'amélioration de l
 
 ## La suite
 
-[Mise en Pratique BDD](cours/06_Mise_en_pratique_BDD.md)
+[Mise en Pratique BDD](../cours/06_Mise_en_pratique_BDD.md)
 
 ![...](...) <!-- .element width="...%" -->

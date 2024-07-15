@@ -1,0 +1,7 @@
+# For plugin reveal.js-menu
+plugin/reveal.js-menu/node_modules
+
+# For plugin reveal.js-plugin-spotlight
+plugin/reveal.js-plugin-spotlight/.idea/
+
+# Others

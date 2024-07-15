@@ -212,7 +212,7 @@ If your themes configuration includes code highlight themes you need to ensure t
 
 The slide titles used in the menu can be supplied explicitly or are taken directly from the presentation, using the following rules...
 
-###### 1. The section's `data-menu-title` attribute.
+### 1. The section's `data-menu-title` attribute
 
 If the slide's section element contains a `data-menu-title` attribute this will be used for the slide title in the menu. For example...
 
@@ -223,7 +223,7 @@ If the slide's section element contains a `data-menu-title` attribute this will 
 </section>
 ```
 
-###### 2. Any element with the class `menu-title`.
+### 2. Any element with the class `menu-title`
 
 If the slide's section contains an element with the class `menu-title` then the element's text will be used for the title. The first such element found will be used if there are more than one. Note the element need not be displayed to be used. For example...
 
@@ -235,7 +235,7 @@ If the slide's section contains an element with the class `menu-title` then the 
 </section>
 ```
 
-###### 3. The first heading found or a custom element selector
+### 3. The first heading found or a custom element selector
 
 The `titleSelector` option can be used to customise the elements that will be used to generate the slide titles in the menu. The default option selects the first heading element found in the slide. For example...
 
@@ -259,7 +259,7 @@ Any valid CSS selector should work but note the selector will only be applied to
 
 Using `titleSelector: ''` will ignore all elements and no title will be provided, unless the slide section contains a `data-menu-title` attribute or an element with the `menu-title` class.
 
-###### 4. No title is provided
+### 4. No title is provided
 
 If no title can be found using the above methods, a default title incorporating the slide number will be used. For example, the following would result in a slide title in the format of 'Slide 12'...
 
@@ -303,7 +303,7 @@ Reveal.initialize({
 - You can provide a URL in `src` to load html from another file.
 - Alternatively, you can provide html in `content` and this will be added to the custom panel.
 
-###### Custom slide menu items
+## Custom slide menu items
 
 You can provide menu items in your custom panels using the following format. This allows you to define your own navigation links for your presentation.
 

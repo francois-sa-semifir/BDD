@@ -139,6 +139,6 @@ La pyramide des tests est un modèle qui guide les équipes de développement lo
 
 ## La suite
 
-[Approches TDD, ATDD et BDD](cours/04_Approches_TDD_ATDD_BDD.md)
+[Approches TDD, ATDD et BDD](../cours/04_Approches_TDD_ATDD_BDD.md)
 
 ![...](...) <!-- .element width="...%" -->

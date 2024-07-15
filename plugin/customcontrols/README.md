@@ -4,7 +4,6 @@ This plugin allows to add responsive custom controls to reveal.js which allow ar
 
 [Check out the live demo](https://rajgoel.github.io/reveal.js-demos/customcontrols-demo.html)
 
-
 ## Installation
 
 Copy the files `plugin.js` and `style.css` into the plugin folder of your reveal.js presentation, i.e. ```plugin/customcontrols``` and load the plugin as shown below.
@@ -30,35 +29,31 @@ Note, without configuration you need to add
 
 between ```<head>``` and ```</head>``` of your HTML file because the defaults use [Font Awesome](http://fontawesome.io/).
 
-
-
 ## Configuration
 
 The plugin can be configured by adding custom controls and changing the layout of the slide number, e.g., by:
 
-
 ```javascript
 Reveal.initialize({
-	// ...
+  // ...
   customcontrols: {
-		controls: [
-      {
-			  id: 'toggle-overview',
-			  title: 'Toggle overview (O)',
-			  icon: '<i class="fa fa-th"></i>',
-			  action: 'Reveal.toggleOverview();'
-			},
-			{ icon: '<i class="fa fa-pen-square"></i>',
-			  title: 'Toggle chalkboard (B)',
-			  action: 'RevealChalkboard.toggleChalkboard();'
-			},
-			{ icon: '<i class="fa fa-pen"></i>',
-			  title: 'Toggle notes canvas (C)',
-			  action: 'RevealChalkboard.toggleNotesCanvas();'
-			}
-		]
-	},
-	// ...
+      controls: [
+        { id: 'toggle-overview',
+        title: 'Toggle overview (O)',
+        icon: '<i class="fa fa-th"></i>',
+        action: 'Reveal.toggleOverview();'
+        },
+        { icon: '<i class="fa fa-pen-square"></i>',
+        title: 'Toggle chalkboard (B)',
+        action: 'RevealChalkboard.toggleChalkboard();'
+        },
+        { icon: '<i class="fa fa-pen"></i>',
+        title: 'Toggle notes canvas (C)',
+        action: 'RevealChalkboard.toggleNotesCanvas();'
+        }
+      ]
+    },
+  // ...
 
 });
 ```

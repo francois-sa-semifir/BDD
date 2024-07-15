@@ -127,6 +127,6 @@ author:
 
 ## La suite
 
-[Couverture de Test](cours/05_Couverture_de_test.md)
+[Couverture de Test](../cours/05_Couverture_de_test.md)
 
 ![...](...) <!-- .element width="...%" -->

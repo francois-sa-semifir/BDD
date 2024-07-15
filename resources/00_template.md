@@ -56,7 +56,7 @@ author:
 
 ## La suite
 
-[...](01_....md)
+[...](../cours/00_....md)
 
 ![...](...) <!-- .element width="...%" -->
 

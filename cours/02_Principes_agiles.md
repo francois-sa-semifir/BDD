@@ -130,6 +130,6 @@ En conclusion, les principes agiles mettent l'accent sur l'interaction humaine, 
 
 ## La suite
 
-[Caractéristiques des Tests](cours/03_Caractéristiques_des_tests.md)
+[Caractéristiques des Tests](../cours/03_Caractéristiques_des_tests.md)
 
 ![...](...) <!-- .element width="...%" -->
